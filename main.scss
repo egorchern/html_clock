@@ -10,15 +10,14 @@ html, body{
     overflow-y: auto;
     overflow-x: hidden;
 }
-#main_canvas{
-    margin-top: 20vh;
-    width: 300px;
-    height: 300px;
-    
-    border: 1px solid black;
-}
+
 .horizontal_aligner{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#time, #position{
+    font-weight: bolder;
+    font-size: 50px;
 }
