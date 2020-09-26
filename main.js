@@ -193,13 +193,14 @@ function draw_inside_clock(){
         
 
     }
-    // hour arrow - 0.55; minutes - 0.45; seconds - 0.3
+    
     draw_arrow("seconds");
     draw_arrow("minutes");
     draw_arrow("hours");
     
 
 }
+// hour arrow - 0.45; minutes - 0.35; seconds - 0.25. Draws arrow
 function draw_arrow(type){
 
     let multiplier;
@@ -208,21 +209,21 @@ function draw_arrow(type){
     
     switch (type){
         case "seconds":
-            multiplier = 0.3;
+            multiplier = 0.25;
             ctx.lineWidth = 1.5;
             ctx.strokeStyle = "red";
             step_value /= 60;
             temp = step_value * seconds;
             break;
         case "minutes":
-            multiplier = 0.45;
+            multiplier = 0.35;
             ctx.lineWidth = 2.5;
             ctx.strokeStyle = "black";
             step_value /= 60;
             temp = step_value * minutes;
             break;
         case "hours":
-            multiplier = 0.55;
+            multiplier = 0.45;
             ctx.lineWidth = 3.5;
             ctx.strokeStyle = "black";
             step_value /= 12;
